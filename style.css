@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: rgb(69.41, 7.06, 14.9);
+  width: 100%;
+  height: 10vh;
+}
+
+label.logo {
+  font-size: 20px;
+  color: #fff;
+  line-height: 60px;
+  padding: 0, 100px;
+  margin-left: 20px;
+}
+
+ul {
+  float: right;
+  margin-right: 40px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 60px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+a.active,
+a:hover {
+  border: 1px solid white;
+  transition: 0.5s;
+}
+
+nav #icon {
+  color: #fff;
+  font-size: 30px;
+  line-height: 60px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#word {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 10vh;
+  font-size: 18px;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(167, 161, 161);
+  font-family: "Courier Prime", monospace;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  height: 2rem;
+  width: 100%;
+}
+
+.left-box {
+  color: rgb(69.41, 7.06, 14.9);
+  padding-right: 10px;
+}
+
+.right-box {
+  margin-right: 150px;
+}
+
+.word {
+  height: 2.7rem;
+  margin: 10px 0 10px 0;
+  padding: 5px 10px 5px 10px;
+  width: 100%;
+}
+
+.konkon {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+  margin: 10px 0 10px 0;
+  height: 2rem;
+  background-color: rgb(218, 208, 208);
+  width: 150%;
+}
+
+.word-2 {
+  margin: 20px 0px 10px 0px;
+  padding: 0px 10px 0px 10px;
+  font-size: 95%;
+  color: rgb(49, 5, 10);
+  text-align: start;
+}
+
+.last-box {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 90px;
+  padding-right: 10px;
+  padding-left: 2px;
+  width: 100%;
+  font-size: medium;
+}
+
+.button-2 {
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  color: #fff;
+  background-color: rgb(69.41, 7.06, 14.9);
+  font-family: "Courier Prime", monospace;
+  border-radius: 5px;
+  border: 0;
+  width: 40%;
+  height: 20%;
+  font-size: medium;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) @media only screen and (min-width: 768px) @media only screen and (min-width: 992px);
