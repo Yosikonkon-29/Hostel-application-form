@@ -52,6 +52,10 @@ nav #icon {
   float: right;
   margin-right: 40px;
   cursor: pointer;
+  /* setting the display property to none, since we only want it 
+    to be seen by users on a mobile device.
+  */
+  display: none;
 }
 
 #word {
@@ -133,7 +137,46 @@ body {
   font-size: medium;
 }
 
-@media only screen and (max-width: 600px) {
+/* 
+  * @media only screen and (min-width: 600px); 
+  * @media only screen and (min-width: 768px); 
+  * @media only screen and (min-width: 992px);
+
+   * I noticed that you're trying to use these breakpoints below
+   * so my implementation of the responsiveness is going to take 
+   * into consideration. I'll be starting from a device screen width of 0px to 576px
+   * then from 576px to 768px, and then to 992px
+   * We'll be using an approach that i call media query ranges 
+   * so you avoid using repititive media rules. I wrote about it here
+   * https://www.freecodecamp.org/news/media-queries-width-ranges/
+*/
+
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  /* because we do not want to show the user some elements in the
+    navbar on a particular screen width, in this case, 576px, so we'd set
+    the ul element's display property to none
+
+    automatically, the hamburger menu goes into the header element.
+    you can proceed to style this hambuger icon as you please.
+  */
+  header ul {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 600px) @media only screen and (min-width: 768px) @media only screen and (min-width: 992px);
+/* to avoid repitition, we could have just altered the max-width of the 
+   the previous media query to accomodate the next breakpoint: 768px,
+   but, as time goes on and the project evolves it would be nice if 
+   you have distinct media queries for different device breakpoints
+
+   Since this media query below is for larger screens and the task at 
+   hand is to remove the hamburger menu on tablet screens or screens
+   in that range: 768px t0 992px, we'd alter the media query to accomodate
+   this specific width
+*/
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  header label[id="icon"] {
+    display: none;
+  }
+}
